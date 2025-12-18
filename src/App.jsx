@@ -1,16 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+
+import { motion } from "framer-motion";
+
+import {
+  ArrowRight,
+  Check,
+  Menu,
+  X,
+  Star,
+  Shield,
+  Zap,
+  Sparkles,
+} from "lucide-react";
+
+const navLinks = [
+  { href: "#features", label: "Recursos" },
+  { href: "#testmonials", label: "Depoimentos" },
+  { href: "#pricing", label: "Preços" },
+  { href: "#faq", label: "FAQ" },
+];
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [open, setOpen] = useState(false);
 
   return (
-    <>
-     
-    </>
-  )
+    <div className="bg-slate-950 text-slate-100 selection:bg-fuschia-500/30">
+      header.sticky
+    </div>
+  );
 }
 
-export default App
+export default App;
