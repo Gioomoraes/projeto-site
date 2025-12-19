@@ -27,14 +27,20 @@ function App() {
   return (
     <div className="bg-slate-950 text-slate-100 selection:bg-fuchsia-500/30">
       <header className="sticky top-8 z-40 border-b border-white/5">
-        <div>
+        <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
             <Sparkles className="size-5 text-fuchsia-400" />
             <span className="font-bold tracking-tight">Minha marca</span>
           </a>
-          <nav>
+          <nav className="hidden md:felx items-center gap-6 text-sm">
             {navLinks.map((l) => (
-              <a>{l.label}</a>
+              <a
+                key={l.href}
+                href={l.href}
+                className="hover:text-fuchsia-300 transition"
+              >
+                {l.label}
+              </a>
             ))}
           </nav>
         </div>
