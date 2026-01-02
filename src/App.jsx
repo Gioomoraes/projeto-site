@@ -52,7 +52,13 @@ function App() {
         </div>
         {open && (
           <div className="md:hiddden">
-            <p>menu</p>
+            <div className="fixed bg-black/60" onClick={() => setOpen(false)}>
+              <div className="fixed top-0 right-0 w-80 h-full bg-slate-900 border-l border-white/10 p-6">
+                <div className="flex items-center gap-2">
+                  <Sparkles className="size-6 text-fuschia-400" />
+                </div>
+              </div>
+            </div>
           </div>
         )}
       </header>
