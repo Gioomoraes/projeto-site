@@ -12,7 +12,7 @@ import {
   Zap,
   Sparkles,
 } from "lucide-react";
-import { a } from "framer-motion/client";
+import { a, div } from "framer-motion/client";
 
 const navLinks = [
   { href: "#features", label: "Recursos" },
@@ -43,7 +43,18 @@ function App() {
               </a>
             ))}
           </nav>
+          <button
+            className="md:hidden p-2 rounded-lg"
+            onClick={() => setOpen(true)}
+          >
+            <Menu className="size-5" />
+          </button>
         </div>
+        {open && (
+          <div className="md:hiddden">
+            <p>menu</p>
+          </div>
+        )}
       </header>
     </div>
   );
