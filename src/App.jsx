@@ -57,16 +57,30 @@ function App() {
               onClick={() => setOpen(false)}
             >
               <div className="fixed top-0 right-0 w-80 h-full bg-slate-900 border-l border-white/10 p-6">
-                <div className="flex items-center gap-2">
-                  <Sparkles className="size-6 text-fuschia-400" />
-                  <span className="font-semibold">Gigi projeto</span>
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="size-6 text-fuchsia-400" />
+                    <span className="font-semibold">Gigi projeto</span>
+                  </div>
+                  <button
+                    className="p-2 rounded-lg"
+                    onClick={() => setOpen(false)}
+                  >
+                    <X className="size-5" />
+                  </button>
                 </div>
-                <button
-                  className="p-2 rounded-lg"
-                  onClick={() => setOpen(false)}
-                >
-                  <X className="size-5" />
-                </button>
+                <div className="flex flex-col gap-4 bg-slate-900 p-4 w-90">
+                  {navLinks.map((l) => (
+                    <a
+                      key={l.href}
+                      href={l.href}
+                      className="text-slate-200"
+                      onClick={() => setOpen(false)}
+                    >
+                      {l.label}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
