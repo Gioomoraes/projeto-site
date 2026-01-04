@@ -92,13 +92,25 @@ function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl font-extrabold leading-tight max-w-3xl"
+            className="text-6xl font-extrabold leading-tight max-w-3xl"
           >
             Primeiro projeto de landing{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-violet-300">
               simples
             </span>
           </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mt-4 text-slate-600 max-w-2xl"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+            consequatur quibusdam reprehenderit quo voluptatibus. Excepturi eos
+            recusandae explicabo eaque? Voluptatibus magni deserunt
+            exercitationem hic laboriosam maxime eius voluptatem praesentium!
+            Exercitationem.
+          </motion.p>
         </div>
       </section>
     </div>
