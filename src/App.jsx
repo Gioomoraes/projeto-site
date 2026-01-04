@@ -86,6 +86,11 @@ function App() {
           </div>
         )}
       </header>
+      <section className="relative overflow-hidden">
+        <div className="mx-auto max-w-6xl px-4 py-20 relative">
+          <motion.h1>Primeiro projeto de landing simples</motion.h1>
+        </div>
+      </section>
     </div>
   );
 }
