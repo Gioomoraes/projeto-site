@@ -88,7 +88,17 @@ function App() {
       </header>
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-6xl px-4 py-20 relative">
-          <motion.h1>Primeiro projeto de landing simples</motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-4xl font-extrabold leading-tight max-w-3xl"
+          >
+            Primeiro projeto de landing{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-violet-300">
+              simples
+            </span>
+          </motion.h1>
         </div>
       </section>
     </div>
