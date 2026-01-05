@@ -156,7 +156,49 @@ function App() {
       </section>
 
       <section id="features" className="mx-auto max-w-6xl px-4 py-16">
-        
+        <h2 className="text-3xl font-bold">Tudo que você precisa saber</h2>
+        <p className="text-slate-300 mt-2 max-w-2xl">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti,
+          illo vitae voluptate explicabo laborum ducimus, obcaecati similique
+          animi vel deleniti itaque pariatur aliquam ratione quasi voluptates
+          veritatis officia quod numquam.
+        </p>
+        <div className="mt-8 grid grid-cols-1 md-grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            {
+              title: "Titulo",
+              descc: "Descrição",
+              icon: <Sparkles className="size-5 text-fuchsia-400" />,
+            },
+            {
+              title: "Titulo",
+              descc: "Descrição",
+              icon: <Star className="size-5 text-yellow-400" />,
+            },
+            {
+              title: "Titulo",
+              descc: "Descrição",
+              icon: <Moon className="size-5 text-indigo-400" />,
+            },
+            {
+              title: "Titulo",
+              descc: "Descrição",
+              icon: <Sparkles className="size-5 text-fuchsia-400" />,
+            },
+            {
+              title: "Titulo",
+              descc: "Descrição",
+              icon: <Sparkles className="size-5 text-fuchsia-400" />,
+            },
+            {
+              title: "Titulo",
+              descc: "Descrição",
+              icon: <Sparkles className="size-5 text-fuchsia-400" />,
+            },
+          ].map((feature) => (
+            <div>Teste</div>
+          ))}
+        </div>
       </section>
     </div>
   );
