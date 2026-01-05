@@ -141,9 +141,13 @@ function App() {
                 >
                   <div className="flex items-center gap-3">
                     {i == 0 && <Heart className="size-5 text-rose-400" />}
-                    {i == 1 && <Star className="size-5 text-yellow-400" />}
+                    {i == 1 && <Star className="size-5 text-amber-400" />}
                     {i == 2 && <Moon className="size-5 text-indigo-400" />}
+                    <div className="font-semibold">{label}</div>
                   </div>
+                  <p className="text-sm text-slate-400 mt-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </p>
                 </div>
               )
             )}
