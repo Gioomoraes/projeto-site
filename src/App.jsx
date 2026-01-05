@@ -154,6 +154,10 @@ function App() {
           </motion.div>
         </div>
       </section>
+
+      <section id="features" className="mx-auto max-w-6xl px-4 py-16">
+        
+      </section>
     </div>
   );
 }
