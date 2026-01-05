@@ -8,8 +8,8 @@ import {
   Menu,
   X,
   Star,
-  Shield,
-  Zap,
+  Moon,
+  Heart,
   Sparkles,
 } from "lucide-react";
 import { a, div } from "framer-motion/client";
@@ -126,6 +126,27 @@ function App() {
             >
               Recursos
             </a>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="mt-8 grid grid-cols-3 gap-4"
+          >
+            {["Informação 1", "Informação 2", "Informação 3"].map(
+              (label, i) => (
+                <div
+                  key={label}
+                  className="rounded-2xl border border-white/10 bg-white/[0.02] p-6"
+                >
+                  <div className="flex items-center gap-3">
+                    {i == 0 && <Heart className="size-5 text-rose-400" />}
+                    {i == 1 && <Star className="size-5 text-yellow-400" />}
+                    {i == 2 && <Moon className="size-5 text-indigo-400" />}
+                  </div>
+                </div>
+              )
+            )}
           </motion.div>
         </div>
       </section>
