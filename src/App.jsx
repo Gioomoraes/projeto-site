@@ -103,14 +103,30 @@ function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mt-4 text-slate-600 max-w-2xl"
+            className="mt-4 text-slate-500 max-w-2xl"
           >
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
-            consequatur quibusdam reprehenderit quo voluptatibus. Excepturi eos
-            recusandae explicabo eaque? Voluptatibus magni deserunt
-            exercitationem hic laboriosam maxime eius voluptatem praesentium!
-            Exercitationem.
+            consequatur quibusdam reprehenderit quo voluptatibus
           </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mt-8 flex flex-row gap-3"
+          >
+            <a
+              href="#"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-fuchsia-600 px-6 py-3 font-medium hover:bg-fuchsia-700 transition"
+            >
+              Veja agora <ArrowRight className="size-4" />
+            </a>
+            <a
+              href="#"
+              className="inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 font-medium border border-white/10"
+            >
+              Recursos
+            </a>
+          </motion.div>
         </div>
       </section>
     </div>
