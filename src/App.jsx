@@ -155,7 +155,7 @@ function App() {
         </div>
       </section>
 
-      <section id="features" className="mx-auto max-w-6xl px-4 py-16">
+      <section id="features" className="mx-auto max-w-6xl px-4 py-8">
         <h2 className="text-3xl font-bold">Tudo que você precisa saber</h2>
         <p className="text-slate-300 mt-2 max-w-2xl">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti,
@@ -167,36 +167,45 @@ function App() {
           {[
             {
               title: "Titulo",
-              descc: "Descrição",
+              desc: "Descrição",
               icon: <Sparkles className="size-5 text-fuchsia-400" />,
             },
             {
               title: "Titulo",
-              descc: "Descrição",
+              desc: "Descrição",
               icon: <Star className="size-5 text-yellow-400" />,
             },
             {
               title: "Titulo",
-              descc: "Descrição",
+              desc: "Descrição",
               icon: <Moon className="size-5 text-indigo-400" />,
             },
             {
               title: "Titulo",
-              descc: "Descrição",
+              desc: "Descrição",
               icon: <Sparkles className="size-5 text-fuchsia-400" />,
             },
             {
               title: "Titulo",
-              descc: "Descrição",
+              desc: "Descrição",
               icon: <Sparkles className="size-5 text-fuchsia-400" />,
             },
             {
               title: "Titulo",
-              descc: "Descrição",
+              desc: "Descrição",
               icon: <Sparkles className="size-5 text-fuchsia-400" />,
             },
           ].map((feature) => (
-            <div>Teste</div>
+            <div
+              key={feature.title}
+              className="rounded-2xl border border-white/10 bg-white/[0.02] p-6"
+            >
+              <div className="flex items-center gap-3">
+                {feature.icon}
+                <p className="font-semibold">{feature.title}</p>
+              </div>
+              <p className="text-sm text-slate-400 mt-2">{feature.desc}</p>
+            </div>
           ))}
         </div>
       </section>
