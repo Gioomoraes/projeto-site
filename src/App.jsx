@@ -213,7 +213,16 @@ function App() {
       </section>
       <section id="testimonials" className="mx-auto max-w-6xl px-4 py-8">
         <h2 className="text-3xl font-bold">Depoimentos</h2>
-
+        <div className="mt-8 grid grid-cols-1 md:-grid-cols-3 gap-4">
+          {[1, 2, 3].map((i) => (
+            <blockquote
+              key={i}
+              className="rounded-2xl border border-white/10 p-6"
+            >
+              
+            </blockquote>
+          ))}
+        </div>
       </section>
     </div>
   );
