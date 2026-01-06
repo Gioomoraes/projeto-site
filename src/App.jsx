@@ -11,6 +11,8 @@ import {
   Moon,
   Heart,
   Sparkles,
+  Sun,
+  Flower,
 } from "lucide-react";
 import { a, div } from "framer-motion/client";
 
@@ -183,17 +185,17 @@ function App() {
             {
               title: "Titulo",
               desc: "Descrição",
-              icon: <Sparkles className="size-5 text-fuchsia-400" />,
+              icon: <Heart className="size-5 text-rose-400" />,
             },
             {
               title: "Titulo",
               desc: "Descrição",
-              icon: <Sparkles className="size-5 text-fuchsia-400" />,
+              icon: <Sun className="size-5 text-orange-400" />,
             },
             {
               title: "Titulo",
               desc: "Descrição",
-              icon: <Sparkles className="size-5 text-fuchsia-400" />,
+              icon: <Flower className="size-5 text-fuchsia-400" />,
             },
           ].map((feature) => (
             <div
@@ -208,6 +210,10 @@ function App() {
             </div>
           ))}
         </div>
+      </section>
+      <section id="testimonials" className="mx-auto max-w-6xl px-4 py-8">
+        <h2 className="text-3xl font-bold">Depoimentos</h2>
+
       </section>
     </div>
   );
