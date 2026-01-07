@@ -235,6 +235,18 @@ function App() {
           ))}
         </div>
       </section>
+      <section id="pricing" className="mx-auto max-w-6xl px-4 py-8">
+        <h2 className="text-3xl font-bold">Plano Único</h2>
+        <p className="text-slate-300 mt-2 max-w-2xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+          pariatur quos ea eum, officiis vel? Sequi magnam odio dolorum at?{" "}
+        </p>
+        <ul className="mt-4 space-y-2 text-sm text-slate-300">
+          <li className="flex items-center gap-2">
+            <Check className="size-4 text-esmerald-400">Benefício 1 </Check>
+          </li>
+        </ul>
+      </section>
     </div>
   );
 }
