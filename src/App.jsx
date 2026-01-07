@@ -268,13 +268,14 @@ function App() {
             </div>
             <button
               href="#"
-              className="mt-6 rounded-2xl bg-fuchsia-600 px-6 py-3 font-medium"
+              className="mt-6 cursor-pointer rounded-2xl bg-fuchsia-600 hover:bg-fuchsia-800 px-6 py-3 font-medium"
             >
               Comprar agora!
             </button>
           </div>
         </div>
       </section>
+      
     </div>
   );
 }
