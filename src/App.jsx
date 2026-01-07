@@ -13,6 +13,7 @@ import {
   Sparkles,
   Sun,
   Flower,
+  Clock11,
 } from "lucide-react";
 import { a, div } from "framer-motion/client";
 
@@ -236,16 +237,43 @@ function App() {
         </div>
       </section>
       <section id="pricing" className="mx-auto max-w-6xl px-4 py-8">
-        <h2 className="text-3xl font-bold">Plano Único</h2>
-        <p className="text-slate-300 mt-2 max-w-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          pariatur quos ea eum, officiis vel? Sequi magnam odio dolorum at?{" "}
-        </p>
-        <ul className="mt-4 space-y-2 text-sm text-slate-300">
-          <li className="flex items-center gap-2">
-            <Check className="size-4 text-esmerald-400">Benefício 1 </Check>
-          </li>
-        </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h2 className="text-3xl font-bold">Plano Único</h2>
+            <p className="text-slate-300 mt-6 max-w-2xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              pariatur quos ea eum, officiis vel? Sequi magnam odio dolorum at?{" "}
+            </p>
+            <ul className="mt-4 space-y-2 text-sm text-slate-300">
+              <li className="flex items-center gap-2">
+                <Check className="size-4 text-emerald-400" />
+                Benefício 1
+              </li>
+              <li className="flex items-center gap-2">
+                <Check className="size-4 text-emerald-400" />
+                Benefício 2
+              </li>
+              <li className="flex items-center gap-2">
+                <Check className="size-4 text-emerald-400" />
+                Benefício 3
+              </li>
+            </ul>
+          </div>
+          <div className="rounded-3xl border bordere-white/10 bg-white/[0.02] p-8">
+            <div className="text-sm text-slate-400">A partir de</div>
+            <div className="text-5xl font-extrabold mt-2">R$100,99</div>
+            <div className="text-sm text-slate-300 mt-4 flex items-center gap-2">
+              <Clock11 className="size-4 text-amber-400" />
+              <p> Válido somente hoje</p>
+            </div>
+            <button
+              href="#"
+              className="mt-6 rounded-2xl bg-fuchsia-600 px-6 py-3 font-medium"
+            >
+              Comprar agora!
+            </button>
+          </div>
+        </div>
       </section>
     </div>
   );
