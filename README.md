@@ -3,7 +3,7 @@
 Uma landing page moderna e responsiva construída com **React**, **Tailwind CSS** e **Framer Motion**.  
 Este projeto foi criado com foco em estudo e prática de UI, componentização, animações e layout responsivo.
 
-# 🔗 **Acesse o projeto em produção:""
+# 🔗 Acesse o projeto em produção:
 - https://gioomoraes.github.io/projeto-site/
 
 
